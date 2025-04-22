@@ -16,4 +16,12 @@ void main(){
     3: 'Thais Silva',
     4: 'Carlos Mensales',
   };
+  // verificar chaves
+  bool existe = listaAlunos.containsKey(2);
+  print('Thais é a chave 2: $existe');
+  existe = listaAlunos.containsKey(5);
+  print('Chave 5 não existe: $existe');
+
+  existe = listaAlunos.containsValue('Carlos');
+  print('Carlos é o valor: $existe');
 }
